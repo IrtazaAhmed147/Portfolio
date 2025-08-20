@@ -27,12 +27,9 @@ const Contact = () => {
     const email = newForm.get("email")
     const message = newForm.get("message")
     if(!name.trim()|| !message.trim() || !email.trim()) {
-      console.log("missing fields");
       setLoading(false);
       return
     }
-
-    return
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -80,15 +77,15 @@ const Contact = () => {
           </Typography>
 
           <Box display="flex" alignItems="center" mb={2}>
-            <EmailIcon sx={{ color: "primary.main", mr: 1 }} />
+            <EmailIcon sx={{ color: "#d32f2f", mr: 1 }} />
             <Typography variant="body1">irtazaahmedk@gmail.com</Typography>
           </Box>
           <Box display="flex" alignItems="center" mb={2}>
-            <PhoneIcon sx={{ color: "primary.main", mr: 1 }} />
+            <PhoneIcon sx={{ color: "#d32f2f", mr: 1 }} />
             <Typography variant="body1">+92 336 2276164</Typography>
           </Box>
           <Box display="flex" alignItems="center">
-            <LocationOnIcon sx={{ color: "primary.main", mr: 1 }} />
+            <LocationOnIcon sx={{ color: "#d32f2f", mr: 1 }} />
             <Typography variant="body1">Karachi, Pakistan</Typography>
           </Box>
         </Box>
@@ -110,7 +107,7 @@ const Contact = () => {
               label="Your Name"
               fullWidth
               variant="outlined"
-              name="name"   // 👈 must match EmailJS template
+              name="name"  
               sx={{ mb: 2 }}
               required
             />
@@ -119,7 +116,7 @@ const Contact = () => {
               label="Your Email"
               fullWidth
               variant="outlined"
-              name="email"  // 👈 must match EmailJS template
+              name="email" 
               sx={{ mb: 2 }}
               required
             />
@@ -139,7 +136,7 @@ const Contact = () => {
               variant="contained"
               size="large"
               fullWidth
-              color="primary"
+              color="error"
               disabled={loading} // disable while loading
               startIcon={
                 loading ? <CircularProgress size={20} color="inherit" /> : null

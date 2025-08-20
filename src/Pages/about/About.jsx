@@ -35,7 +35,7 @@ const About = () => {
                 fontWeight: "bold",
                 mb: 2,
                 textAlign: "center",
-                color: "primary.main",
+                color: "#333",
               }}
             >
               About Me
@@ -43,7 +43,7 @@ const About = () => {
 
             <Divider
               sx={{
-                bgcolor: "primary.main",
+                bgcolor: "#333",
                 height: "3px",
                 width: "80px",
                 mx: "auto",
@@ -101,14 +101,14 @@ const About = () => {
                   fontWeight: "bold",
                   mb: 2,
                   textAlign: "center",
-                  color: "primary.main",
+                  color: "#333",
                 }}
               >
                 Education
               </Typography>
               <Divider
                 sx={{
-                  bgcolor: "primary.main",
+                  bgcolor: "#333",
                   height: "3px",
                   width: "80px",
                   mx: "auto",

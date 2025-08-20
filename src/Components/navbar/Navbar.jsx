@@ -36,44 +36,44 @@ function DrawerAppBar(props) {
         flexDirection: "column",
       }}
     >
-      <Box sx={{width: '100%',display:'flex', justifyContent:'end'}}>
-
-       <IconButton
-              // onClick={handleClose}
-              sx={{
-                color: "grey.700",
-                "&:hover": { color: "black" },
-              }}
-              >
-              <CloseIcon />
-            </IconButton>
-              </Box>
+      <Box sx={{ width: '100%', display: 'flex', justifyContent: 'end' }}>
+        <IconButton
+          sx={{
+            color: "grey.700",
+            "&:hover": { color: "black" },
+          }}
+        >
+          <CloseIcon />
+        </IconButton>
+      </Box>
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText
-                primary={
-                  <Link
-                    to={item.toLowerCase()}
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    activeClass="active"
-                    spy={true}
-                    style={{
-                      cursor: "pointer",
-                      textDecoration: "none",
-                      color: "black",
-                      fontSize: "1.1rem",
-                      fontWeight: "500",
-                    }}
-                  >
-                    {item}
-                  </Link>
-                }
-              />
-            </ListItemButton>
+        {navItems.map((item, i) => (
+          <ListItem key={i} disablePadding>
+            <Link
+              to={item.toLowerCase()}
+              smooth={true}
+              duration={500}
+              offset={-70}
+              activeClass="active"
+              spy={true}
+              style={{
+                cursor: "pointer",
+                textDecoration: "none",
+                color: "black",
+                fontSize: "1.1rem",
+                fontWeight: "500",
+                width: '100%'
+              }}
+            >
+              <ListItemButton sx={{ textAlign: "center" }}>
+                <ListItemText
+                // primary={
+
+                //     {item}
+                //   }
+                >{item}</ListItemText>
+              </ListItemButton>
+            </Link>
           </ListItem>
         ))}
       </List>
@@ -94,40 +94,43 @@ function DrawerAppBar(props) {
         }}
       >
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-        
+
 
           {/* Desktop Nav */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button
+              <Link
                 key={item}
-                sx={{
-                  color: "black",
-                  fontWeight: 500,
-                  textTransform: "none",
-                  mx: 1,
-                  "&:hover": {
-                    backgroundColor: "transparent",
-                    color: "primary.main",
-                  },
+                to={item.toLowerCase()}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                activeClass="active"
+                spy={true}
+                style={{
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  color: "inherit",
+
                 }}
               >
-                <Link
-                  to={item.toLowerCase()}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active"
-                  spy={true}
-                  style={{
-                    cursor: "pointer",
-                    textDecoration: "none",
-                    color: "inherit",
+                <Button
+
+                  sx={{
+                    color: "#252525",
+                    fontWeight: 'bold',
+                    fontSize: 17,
+                    textTransform: "none",
+                    mx: 1,
+                    "&:hover": {
+                      color: "black",
+                    },
                   }}
                 >
+                  
                   {item}
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             ))}
           </Box>
 

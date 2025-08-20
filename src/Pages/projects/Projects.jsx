@@ -13,7 +13,7 @@ function Projects() {
           backgroundColor: "#f5f5f5",
         }}>
 
-        <Typography fontWeight={'bold'} variant='h3' textAlign={'center'}>
+        <Typography fontWeight={'bold'} color='#333' variant='h3' textAlign={'center'}>
           Projects
         </Typography>
         <Box
