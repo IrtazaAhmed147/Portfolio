@@ -60,10 +60,12 @@ const About = () => {
                 color: "text.secondary",
                 // fontSize: "1.1rem",
                 fontSize: {md:"1.1rem",sm: "1rem",xs: "0.9rem"},
+                fontFamily: "'Montserrat', 'sans-serif'",
+
                 mb: 3,
               }}
             >
-              I’m a passionate MERN Stack Developer with a deep love for
+              I'm a passionate MERN Stack Developer with a deep love for
               building modern, scalable, and user-friendly web applications. My
               journey in development has equipped me with expertise in MongoDB,
               Express.js, React.js, and Node.js, allowing me to bring ideas to
@@ -78,6 +80,7 @@ const About = () => {
                 color: "text.secondary",
                fontSize: {md:"1.1rem",sm: "1rem",xs: "0.9rem"},
                 mb: 6,
+                fontFamily: "'Montserrat', 'sans-serif'",
               }}
             >
               Beyond coding, I value clean architecture, performance
@@ -118,13 +121,14 @@ const About = () => {
               />
 
               <List>
-                    <ListItem>
+                    <ListItem sx={{fontFamily: "'Montserrat', 'sans-serif'",}}>
                       <ListItemText
                         primary="Mern Stack Development"
                         secondary="Saylani Mass IT Training | 2024 - 2025"
                         primaryTypographyProps={{
                           fontWeight: "bold",
                           fontSize: {md:"1.1rem",sm: "1rem",xs: "1rem"},
+                          fontFamily: "'Montserrat', 'sans-serif'",
                         }}
                         secondaryTypographyProps={{
                           color: "text.secondary",

@@ -65,7 +65,7 @@ function DrawerAppBar(props) {
                 width: '100%'
               }}
             >
-              <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemButton sx={{ textAlign: "center",fontFamily: "'Montserrat', 'sans-serif'", }}>
                 <ListItemText
                 // primary={
 
@@ -121,6 +121,7 @@ function DrawerAppBar(props) {
                     fontWeight: 'bold',
                     fontSize: 17,
                     textTransform: "none",
+                       fontFamily: "'Montserrat', 'sans-serif'",
                     mx: 1,
                     "&:hover": {
                       color: "black",

@@ -6,3 +6,9 @@
   box-sizing: border-box;
    font-family: "Montserrat", sans-serif;
 }
+.particles-container {
+  background: #000;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}

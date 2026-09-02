@@ -34,6 +34,7 @@ export default function ProjectCard({ image, title, description, liveLink, githu
             justifyContent: "space-between",
             flexDirection: "column",
             height: "60%",
+            fontFamily: "'Montserrat', 'sans-serif'",
           }}
         >
           <CardContent sx={{ padding: { md: 2, sm: 2, xs: 1 } }}>

@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from '@mui/material';
-import profileImage from '../../assets/mypic.png';
+import profileImage from '../../assets/pfp3.jpeg';
 import resume from '../../assets/my_resume.pdf'
 import React from 'react';
 
@@ -48,7 +48,7 @@ function Home() {
             color: 'text.secondary',
           }}
         >
-          I’m a Full Stack Developer experienced in JavaScript, React.js, Node.js,
+          I'm a Full Stack Developer experienced in JavaScript, React.js, Node.js,
           Express, and MongoDB. I create responsive, user-friendly web
           applications with clean code and a passion for continuous learning
           and collaboration.
@@ -64,6 +64,7 @@ function Home() {
             borderRadius: '8px',
             fontWeight: 'bold',
             textTransform: 'none',
+            fontFamily: "'Montserrat', 'sans-serif'",
           }}
           component="a"
           href={resume}   // place your resume file inside "public/resume.pdf"
